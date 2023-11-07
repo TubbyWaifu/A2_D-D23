@@ -273,6 +273,8 @@ main {
 
     .img-standard{
         width: 100%;
+        display: block;
+        display: center;
     }
 
     .book-bg {
