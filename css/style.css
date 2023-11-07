@@ -270,24 +270,8 @@ main {
     .book-grid {
         display: block;
     }
-
-    .img-standard{
-        width: 100%;
-        display: block;
-        display: center;
-    }
-
-    .book-bg {
-        width: 100%;
-        display: block;
-        display: center;
-        padding: 0;
-        background-size: cover;
-        background-position: center; 
-    }
-
-    
 }
+
 
 
 
