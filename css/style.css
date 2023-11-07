@@ -40,6 +40,11 @@ h1 a {
     text-decoration: none;
 }
 
+h1 a:hover {
+    color: #242527;
+    transition: all 0.2s ease-in-out;
+}
+
 h2 {
     margin: 10px;
     margin-left: 0px;
@@ -76,6 +81,7 @@ main {
 }
 
 .main-nav ul li {
+    color: white;
     padding: 20px;
 }
 
@@ -83,8 +89,56 @@ main {
     text-decoration: none;
 }
 
+.main-nav ul li a:hover {
+    color: #242527;
+    transition: all 0.2s ease-in-out;
+}
+
+.main-nav ul li.active a {
+    color: #242527;
+}
+
+.read-me {
+    color: white;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.read-me:hover {
+    color: #4DFEBE;
+    transition: all 0.2s ease-in-out;
+}
+
+.book-fix {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-gap: 10px;
+}
+
+.book-bg {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    display: block;
+    display: flex;
+    padding: 32px;
+    margin-bottom: 50px;
+}
+
 .g-box-01 {
     background: linear-gradient(180deg, #64E1B4 0%, #553092 100%);
+}
+
+.g-box-01-2 {
+    background: linear-gradient(180deg, #64E1B4 0%, #553092 100%);
+    margin-bottom: 100px;
 }
 
 .g-box-02 {
@@ -92,10 +146,20 @@ main {
     margin-top: 185px;
 }
 
+.g-box-02-2 {
+    background: linear-gradient(180deg, #553092 0%, #E16464 100%);
+    margin-bottom: 100px;
+}
+
 .g-box-03 {
     background: linear-gradient(180deg, #E16464 0%, #7A0000 100%);
     margin-top: 185px;
-    margin-bottom: 185px;
+    margin-bottom: 100px;
+}
+
+.g-box-03-2 {
+    background: linear-gradient(180deg, #E16464 0%, #7A0000 100%);
+    margin-bottom: 100px;
 }
 
 .image-scroll-container {
@@ -137,6 +201,12 @@ main {
     margin-bottom: 50px;
 }
 
+.img-standard {
+    width: 400px;
+    height: auto;
+    padding-right: 30px;
+}
+
 .citation-button {
     background: #BC0F0F;
     width: 480px;
@@ -170,6 +240,45 @@ main {
 }
 
 
+  
+   @media screen and (max-width: 800px) {
+    header {
+        display: block;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+        background-size: cover;
+        background-position: center; 
+        height: 47vh; 
+    }
+
+    h1 {
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 5px 0;
+    }
+
+    .main-nav ul {
+        display: block;
+        text-align: center;
+    }
+    .main-nav ul li {
+        margin: 0;
+        padding: 5px 0;
+    }
+
+    .book-grid {
+        display: block;
+    }
+
+    .book-bg {
+        padding: 0;
+        background-size: cover; /* ensure background image covers the entire element */
+        background-position: center; /* center the background image */
+    }
+
+    
+}
 
 
 
