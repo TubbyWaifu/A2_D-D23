@@ -272,9 +272,12 @@ main {
     }
 
     .book-bg {
+        width: 100%;
+        display: block;
+        display: center;
         padding: 0;
-        background-size: cover; /* ensure background image covers the entire element */
-        background-position: center; /* center the background image */
+        background-size: cover;
+        background-position: center; 
     }
 
     
